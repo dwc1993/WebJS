@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         webView.setWebChromeClient(new WebChromeClient() {
-            //用于显示callJS中的信息
+            //用于拦截callJS中的alert的信息
             @Override
             public boolean onJsAlert(WebView view, String url, String message, final JsResult result) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);

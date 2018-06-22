@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StartActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        >
+    <Button
+        android:id="@+id/loadUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:onClick="onClick"
+        android:text="loadUrl和evaluateJavascript、Android调用js"/>
+        <Button
+            android:id="@+id/jsInterface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:onClick="onClick"
+            android:text="JavascriptInterface、js调用Android"/>
+        <Button
+            android:id="@+id/shouldOverrideUrlLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:onClick="onClick"
+            android:text="shouldOverrideUrlLoading、js调用Android"/>
+        <Button
+            android:id="@+id/onJsPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:onClick="onClick"
+            android:text="onJsPrompt、js调用Android"/>
+    </LinearLayout>
+
+</RelativeLayout>
