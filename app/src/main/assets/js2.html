@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>hello javaScript</title>
+    <script>
+        function callAndroid(){
+        //这里调用了Java代码中helloJs()方法，test是映射的对象
+         test.helloJs("js调用了android中的hello方法");
+        }
+
+
+    </script>
+</head>
+<body>
+<!--点击按钮调用事件-->
+<button type="button" id="button1" onclick="callAndroid()">点击调用</button>
+</body>
+</html>

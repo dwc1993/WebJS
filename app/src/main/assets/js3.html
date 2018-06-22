@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function callAndroid(){
+        document.location="js://webview?arg1=111&arg2=222";
+        }
+
+        function returnResult(result){
+        alert("result is"+result);
+        }
+
+    </script>
+</head>
+<body>
+<button id="button1" type="button" onclick="callAndroid()">点击调用Android代码</button>
+</body>
+</html>
